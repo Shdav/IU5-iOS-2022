@@ -10,7 +10,6 @@
 		15350EA627C23C01000CDAC3 /* ArrayToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15350EA527C23C01000CDAC3 /* ArrayToString.swift */; };
 		15350EAA27C23D50000CDAC3 /* ArrayToStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15350EA927C23D50000CDAC3 /* ArrayToStringTests.swift */; };
 		78052E8D27BA89A500BB3916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78052E8C27BA89A500BB3916 /* AppDelegate.swift */; };
-		78052E8F27BA89A500BB3916 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78052E8E27BA89A500BB3916 /* SceneDelegate.swift */; };
 		78052E9127BA89A500BB3916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78052E9027BA89A500BB3916 /* ViewController.swift */; };
 		78052E9427BA89A500BB3916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78052E9227BA89A500BB3916 /* Main.storyboard */; };
 		78052E9627BA89A700BB3916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78052E9527BA89A700BB3916 /* Assets.xcassets */; };
@@ -33,6 +32,11 @@
 		7844CBAE27CA72DB00B4A094 /* ConcurrentPerformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */; };
 		7844CBB027CADA8000B4A094 /* Shipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBAF27CADA7F00B4A094 /* Shipment.swift */; };
 		7844CBB227CADCD000B4A094 /* ShipmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7844CBB127CADCD000B4A094 /* ShipmentTests.swift */; };
+		788BFA5227F4DB0C0086DC68 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BFA4D27F4DB0B0086DC68 /* SecondViewController.swift */; };
+		788BFA5327F4DB0C0086DC68 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BFA4E27F4DB0C0086DC68 /* TextFieldViewController.swift */; };
+		788BFA5427F4DB0C0086DC68 /* SegmentedPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BFA4F27F4DB0C0086DC68 /* SegmentedPickerViewController.swift */; };
+		788BFA5527F4DB0C0086DC68 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BFA5027F4DB0C0086DC68 /* SliderViewController.swift */; };
+		788BFA5627F4DB0C0086DC68 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788BFA5127F4DB0C0086DC68 /* SwitchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +54,6 @@
 		15350EA927C23D50000CDAC3 /* ArrayToStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToStringTests.swift; sourceTree = "<group>"; };
 		78052E8927BA89A500BB3916 /* LABS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LABS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78052E8C27BA89A500BB3916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78052E8E27BA89A500BB3916 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		78052E9027BA89A500BB3916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78052E9327BA89A500BB3916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78052E9527BA89A700BB3916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +78,11 @@
 		7844CBAD27CA72DB00B4A094 /* ConcurrentPerformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentPerformTests.swift; sourceTree = "<group>"; };
 		7844CBAF27CADA7F00B4A094 /* Shipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shipment.swift; sourceTree = "<group>"; };
 		7844CBB127CADCD000B4A094 /* ShipmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentTests.swift; sourceTree = "<group>"; };
+		788BFA4D27F4DB0B0086DC68 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		788BFA4E27F4DB0C0086DC68 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		788BFA4F27F4DB0C0086DC68 /* SegmentedPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedPickerViewController.swift; sourceTree = "<group>"; };
+		788BFA5027F4DB0C0086DC68 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		788BFA5127F4DB0C0086DC68 /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,12 @@
 		7801412927D642C900E22965 /* LAB_3 */ = {
 			isa = PBXGroup;
 			children = (
+				788BFA4D27F4DB0B0086DC68 /* SecondViewController.swift */,
+				788BFA4F27F4DB0C0086DC68 /* SegmentedPickerViewController.swift */,
+				788BFA5027F4DB0C0086DC68 /* SliderViewController.swift */,
+				788BFA5127F4DB0C0086DC68 /* SwitchViewController.swift */,
+				788BFA4E27F4DB0C0086DC68 /* TextFieldViewController.swift */,
 				78052E8C27BA89A500BB3916 /* AppDelegate.swift */,
-				78052E8E27BA89A500BB3916 /* SceneDelegate.swift */,
 				78052E9027BA89A500BB3916 /* ViewController.swift */,
 				78052E9227BA89A500BB3916 /* Main.storyboard */,
 				78052E9527BA89A700BB3916 /* Assets.xcassets */,
@@ -321,16 +333,20 @@
 			files = (
 				7844CB9D27C2605D00B4A094 /* SwapValues.swift in Sources */,
 				78052E9127BA89A500BB3916 /* ViewController.swift in Sources */,
+				788BFA5327F4DB0C0086DC68 /* TextFieldViewController.swift in Sources */,
 				7844CBA327C91E3C00B4A094 /* ReferenceCycleResolver.swift in Sources */,
 				7844CBB027CADA8000B4A094 /* Shipment.swift in Sources */,
+				788BFA5627F4DB0C0086DC68 /* SwitchViewController.swift in Sources */,
 				78052E8D27BA89A500BB3916 /* AppDelegate.swift in Sources */,
 				7844CB9027C1A34200B4A094 /* NumberToArray.swift in Sources */,
+				788BFA5527F4DB0C0086DC68 /* SliderViewController.swift in Sources */,
+				788BFA5227F4DB0C0086DC68 /* SecondViewController.swift in Sources */,
 				78052EBF27BA8AC300BB3916 /* SequenceСreator.swift in Sources */,
+				788BFA5427F4DB0C0086DC68 /* SegmentedPickerViewController.swift in Sources */,
 				7844CB9427C1A72600B4A094 /* BooleanConverter.swift in Sources */,
 				7844CB9227C1A5BE00B4A094 /* SquareSum.swift in Sources */,
 				7844CBAA27CA47B000B4A094 /* CaptureLists.swift in Sources */,
 				7844CBA827CA476900B4A094 /* ConcurrentPerform.swift in Sources */,
-				78052E8F27BA89A500BB3916 /* SceneDelegate.swift in Sources */,
 				15350EA627C23C01000CDAC3 /* ArrayToString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
