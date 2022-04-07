@@ -18,8 +18,6 @@ class SecondViewController: UIViewController {
     }
     
 
-    
-
 }
 
 extension SecondViewController: UITableViewDataSource {
@@ -59,6 +57,7 @@ extension SecondViewController: UITableViewDataSource {
             cell.detailTextLabel?.textColor = UIColor.gray
             cell.imageView?.image = UIImage(systemName: "rectangle.compress.vertical")
         }
+        
         return cell
     }
     
