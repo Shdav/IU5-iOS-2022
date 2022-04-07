@@ -20,7 +20,7 @@ class SegmentedPickerViewController: UIViewController {
 
     @IBAction func tapAction(_ sender: UISegmentedControl) {
         if(segmentPicker.selectedSegmentIndex == 0){
-            view.backgroundColor = .black
+            view.backgroundColor = .systemBackground
         }
         else if(segmentPicker.selectedSegmentIndex == 1){
             view.backgroundColor = .gray

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Lab3StoryBoard" id="BYZ-38-t0r" customClass="ViewController" customModule="LABS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
         <!--Second View Controller-->
         <scene sceneID="doK-ka-SS5">
             <objects>
-                <viewController storyboardIdentifier="secondViewController" id="xKO-B7-Xgh" customClass="SecondViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondViewController" id="xKO-B7-Xgh" customClass="SecondViewController" customModule="LABS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Ee-rW-JkD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Switch View Controller-->
         <scene sceneID="384-Sn-GsI">
             <objects>
-                <viewController storyboardIdentifier="switchViewController" id="E0d-WN-9ce" customClass="SwitchViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="switchViewController" id="E0d-WN-9ce" customClass="SwitchViewController" customModule="LABS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnC-Cd-RMa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +172,7 @@
         <!--Text Field View Controller-->
         <scene sceneID="lKj-wG-qIv">
             <objects>
-                <viewController storyboardIdentifier="textFieldViewController" id="R1N-Ku-g9K" customClass="TextFieldViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="textFieldViewController" id="R1N-Ku-g9K" customClass="TextFieldViewController" customModule="LABS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bSL-kH-auC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,7 +203,7 @@
         <!--Segmented Picker View Controller-->
         <scene sceneID="RKi-CR-LMI">
             <objects>
-                <viewController storyboardIdentifier="segmentedPickerViewController" id="J0C-1l-xn6" customClass="SegmentedPickerViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="segmentedPickerViewController" id="J0C-1l-xn6" customClass="SegmentedPickerViewController" customModule="LABS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z0f-YV-2Ek">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,7 +246,7 @@
         <!--Slider View Controller-->
         <scene sceneID="t6q-aF-Mr4">
             <objects>
-                <viewController storyboardIdentifier="sliderViewController" id="eSP-Aw-07d" customClass="SliderViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sliderViewController" id="eSP-Aw-07d" customClass="SliderViewController" customModule="LABS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i2J-CA-SJ4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
