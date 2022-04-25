@@ -16,6 +16,7 @@ final class InitialViewController: UIViewController{
     private enum CellsDisplayData: String, CaseIterable{
         case lab3 = "Лабораторная работа №3"
         case lab4 = "Лабораторная работа №4"
+        case lab5 = "Лабораторная работа №5"
     }
      
      override func viewDidLoad() {
@@ -65,7 +66,11 @@ extension InitialViewController: UITableViewDelegate{
         } else if indexPath.row == 1 {
             let viewController = LAB_4_viewController()
             navigationController?.pushViewController(viewController, animated: true)
+        } else if indexPath.row == 2{
+            let viewController = HatikoViewController()
+            navigationController?.pushViewController(viewController, animated: true)
         }
+        
     }
 }
 extension InitialViewController: UITableViewDataSource{

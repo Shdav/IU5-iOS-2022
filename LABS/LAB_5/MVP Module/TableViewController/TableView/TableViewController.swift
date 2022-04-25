@@ -1,19 +1,24 @@
 //
-//  ProgrammaticallyViewController.swift
+//  TableViewController.swift
 //  LABS
 //
-//  Created by Shako Davitahvili on 05.04.2022.
+//  Created by Shako Davitahvili on 24.04.2022.
 //
 
 import Foundation
 import UIKit
 
-final class ProgrammaticallyViewController: UIViewController{
-    private lazy var ProgrammaticallyTableView: UITableView = {
+class MVPTableViewController: UIViewController{
+    
+    private enum Constraints{
+        static let squareSize: CGFloat = 40
+    }
+    
+    private lazy var MVPTableView: UITableView = {
         UITableView(frame: CGRect.zero, style: .grouped)
     }()
     
-
+    var output: TableViewOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,45 +26,43 @@ final class ProgrammaticallyViewController: UIViewController{
     }
     
     private func setupTableView(){
-        view.addSubview(ProgrammaticallyTableView)
+        view.addSubview(MVPTableView)
         setupTableViewConstrains()
-        ProgrammaticallyTableView.delegate = self
-        ProgrammaticallyTableView.dataSource = self
-        ProgrammaticallyTableView.tableHeaderView = UIView(frame: CGRect(x: 0,
-                                                                     y: 0,
-                                                                     width: ProgrammaticallyTableView.frame.width,
-                                                                     height: CGFloat.leastNormalMagnitude))
+        MVPTableView.delegate = self
+        MVPTableView.dataSource = self
+        MVPTableView.tableHeaderView = UIView(frame: CGRect(x: 0,
+                                                         y: 0,
+                                                         width: MVPTableView.frame.width,
+                                                         height: CGFloat.leastNormalMagnitude))
     }
     
-    
-
-    
     private func setupTableViewConstrains(){
-        ProgrammaticallyTableView.translatesAutoresizingMaskIntoConstraints = false
+        MVPTableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            ProgrammaticallyTableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            ProgrammaticallyTableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            ProgrammaticallyTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            ProgrammaticallyTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
+            MVPTableView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            MVPTableView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            MVPTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            MVPTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
         ])
     }
     
 }
 
-extension ProgrammaticallyViewController: UITableViewDelegate{
+extension MVPTableViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = ThirdViewController()
         thirdViewIndex = indexPath.row
+        let viewController = MVCLastViewController()
         navigationController?.pushViewController(viewController, animated: true)
+        output.userDidTapTableCell()
     }
     
 }
 
-extension ProgrammaticallyViewController: UITableViewDataSource{
+extension MVPTableViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         4
     }
@@ -74,7 +77,7 @@ extension ProgrammaticallyViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ProgrammaticallyViewController")
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "MVPTableViewController")
         
         if(indexPath.row == 0){
             cell.textLabel?.text = "switchTitleLabel"
@@ -103,6 +106,9 @@ extension ProgrammaticallyViewController: UITableViewDataSource{
         }
         return cell
     }
-    
-    
 }
+
+extension MVPTableViewController: TableViewInput{
+}
+
+
